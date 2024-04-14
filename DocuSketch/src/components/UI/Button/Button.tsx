@@ -1,9 +1,20 @@
 import classes from './Button.module.css'
 
-export default function Button () {
+interface ButtonProps {
+    handleClick: () => void,
+    isLoading: boolean
+}
+
+export default function Button ({ handleClick, isLoading }: ButtonProps) {
     return (
         <>
-            <button className={classes.btn}>Show Icon</button>
+            <button
+                className={classes.btn}
+                onClick={() => handleClick()}
+                disabled={isLoading}
+            >
+                Show Icon
+            </button>
         </>
     )
 }

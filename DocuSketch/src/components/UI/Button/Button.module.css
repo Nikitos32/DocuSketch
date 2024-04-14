@@ -12,3 +12,10 @@
 .btn:hover {
     box-shadow: 1px 1px 1px black;
 }
+
+.btn:disabled {
+    background: linear-gradient(0deg, rgba(255,151,0,0.6) 0%, rgba(251,75,2,0.6) 100%);
+    cursor: not-allowed;
+    box-shadow: none;
+
+}
