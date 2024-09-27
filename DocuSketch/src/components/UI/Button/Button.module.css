@@ -1,0 +1,21 @@
+.btn {
+    font-family: Arial;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid black;
+    background: linear-gradient(0deg, rgba(255,151,0,1) 0%, rgba(251,75,2,1) 100%);
+    color: #ffffff;
+}
+
+.btn:hover {
+    box-shadow: 1px 1px 1px black;
+}
+
+.btn:disabled {
+    background: linear-gradient(0deg, rgba(255,151,0,0.6) 0%, rgba(251,75,2,0.6) 100%);
+    cursor: not-allowed;
+    box-shadow: none;
+
+}
